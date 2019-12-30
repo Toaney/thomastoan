@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import './App.css';
 import TodoList from "./code-snippets/todo-list.js";
-import Home from "./home.js";
+import Home from "./pages/home.js";
 
 function App() {
   return (
