@@ -1,7 +1,8 @@
 import React from 'react';
 
 function Snippets() {
-    const [displayLink1, setDisplayLink1] = React.useState(false);
+    const [displayLink, setDisplayLink] = React.useState("default");
+
 
     return(
         <React.Fragment>
@@ -9,14 +10,16 @@ function Snippets() {
             <div className="snippets-container">
                 {/* //add sidebar component */}
                 <div className="snippets-sidebar">
-                    <button class="sidebar-link">
-                        button
+                    <button class="sidebar-link" onClick={event => setDisplayLink("button1")}>
+                        button 1
                     </button> 
                 </div>
                 {/* //add content component */}
                 <div className="snippets-content">
-                    {displayLink1? <div>true</div> : <div>false</div>}
+                    {displayLink? <div>true</div> : <div>false</div>}
                     <div class="link-1"></div>
+                    {displayLink === "default"? <div>Default</div> : ""}
+                    {displayLink === "button1"? <div>Button 1</div> : ""}
                 </div>
             </div>
         </React.Fragment>
