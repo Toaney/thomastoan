@@ -189,4 +189,23 @@ input:checked{
   width: 30%;
 }
 
-/* End of Todo List styling */
+
+
+/* snippets styling */
+.snippets-container {
+  display: flex;
+  background-color: #338399;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 0px 5px 0px 5px;
+  min-height: 600px;
+}
+
+.snippets-sidebar {
+  width: 20%;
+  background-color: #6c9e0e;
+}
+
+.snippets-content {
+
+}
