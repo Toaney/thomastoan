@@ -1,8 +1,8 @@
 import React from 'react';
+import TodoList from '../code-snippets/todo-list'
 
 function Snippets() {
     const [displayLink, setDisplayLink] = React.useState("default");
-
 
     return(
         <React.Fragment>
@@ -10,8 +10,8 @@ function Snippets() {
             <div className="snippets-container">
                 {/* //add sidebar component */}
                 <div className="snippets-sidebar">
-                    <button class="sidebar-link" onClick={event => setDisplayLink("button1")}>
-                        button 1
+                    <button class="sidebar-link" onClick={event => setDisplayLink("todo-list")}>
+                        Todo List
                     </button> 
                 </div>
                 {/* //add content component */}
@@ -19,7 +19,7 @@ function Snippets() {
                     {displayLink? <div>true</div> : <div>false</div>}
                     <div class="link-1"></div>
                     {displayLink === "default"? <div>Default</div> : ""}
-                    {displayLink === "button1"? <div>Button 1</div> : ""}
+                    {displayLink === "todo-list"? <TodoList /> : ""}
                 </div>
             </div>
         </React.Fragment>

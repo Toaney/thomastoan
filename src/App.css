@@ -203,9 +203,10 @@ input:checked{
 
 .snippets-sidebar {
   width: 20%;
-  background-color: #6c9e0e;
+  background-color: #0d248d;
 }
 
 .snippets-content {
-
+  width: 80%;
+  background-color: #00408a;
 }
