@@ -8,15 +8,24 @@ import * as serviceWorker from './serviceWorker';
 import TodoList from "./code-snippets/todo-list.js";
 import Home from "./pages/home.js";
 import Snippets from "./pages/snippets.js";
+import rootReducer from "./reducers/rootReducer.js";
+import { createStore, applyMiddleware } from 'redux';
+import { Provider } from 'react-redux';
+import thunk from 'redux-thunk';
+
+// const store = createStore(rootReducer);
+const store = createStore(rootReducer, applyMiddleware(thunk));
 
 ReactDOM.render(
-    <Router>
-        <App />
-        <Route path="/snippets" component={ Snippets } />
-        <Route path="/home" component={ Home } />
-        <Route path="/todo-list" component={ TodoList } />
-        <Route exact path="/" component={ Home } />
-    </Router>, 
+    <Provider store={store}>
+        <Router>
+            <App />
+            <Route path="/snippets" component={ Snippets } />
+            <Route path="/home" component={ Home } />
+            <Route path="/todo-list" component={ TodoList } />
+            <Route exact path="/" component={ Home } />
+        </Router>
+    </Provider>, 
     document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
