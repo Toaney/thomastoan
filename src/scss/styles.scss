@@ -2,13 +2,16 @@
 // @import "./components/nav.scss";
 
 body {
-    font-family: Consolas, courier new, Helvetica, Arial, Sans-serif;
+    font-family: "Consolas", "courier new", Helvetica, Arial, Sans-serif;
     font-size: 1em;
     line-height: 1.50em;
     color: #839496;
     background-color: #002a36;
-    margin-top: 0px
+    margin-top: 0px;
+    font-weight: 100;
+    -webkit-font-smoothing: antialiased;
   }
+  
   a {
     text-decoration: underline;
     color: #268bd2;
