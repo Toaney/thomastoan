@@ -196,7 +196,7 @@ input:checked{
   display: flex;
   background-color: #338399;
   max-width: 850px;
-  margin: 0 auto;
+  margin: 0 auto 30px;
   padding: 0px 5px 0px 5px;
   min-height: 600px;
 }
@@ -209,4 +209,9 @@ input:checked{
 .snippets-content {
   width: 80%;
   background-color: #00408a;
+}
+
+.sidebar-link {
+  background: none;
+  outline: none;
 }

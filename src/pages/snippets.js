@@ -6,19 +6,29 @@ function Snippets() {
 
     return(
         <React.Fragment>
-            <h2>Code Snippets</h2>
+            <div className="snippets-header">
+                <h2>Code Snippets</h2>
+            </div>
             <div className="snippets-container">
                 {/* //add sidebar component */}
                 <div className="snippets-sidebar">
                     <button class="sidebar-link" onClick={event => setDisplayLink("todo-list")}>
                         Todo List
+                    </button>
+                    <button class="sidebar-link" onClick={event => setDisplayLink("twitter-feed-finder")}>
+                        Twitter Feed
+                    </button> 
+                    <button class="sidebar-link" onClick={event => setDisplayLink("movie-finder")}>
+                        Movie Finder
+                    </button> 
+                    <button class="sidebar-link" onClick={event => setDisplayLink("nasa-event-finder")}>
+                        Nasa Events
                     </button> 
                 </div>
                 {/* //add content component */}
                 <div className="snippets-content">
-                    {displayLink? <div>true</div> : <div>false</div>}
                     <div class="link-1"></div>
-                    {displayLink === "default"? <div>Default</div> : ""}
+                    {displayLink === "default"? <div>Click the links to the left to explore different code snippets and components.</div> : ""}
                     {displayLink === "todo-list"? <TodoList /> : ""}
                 </div>
             </div>

@@ -1,0 +1,32 @@
+// set up color hex values
+// $blue: #2d769b;
+$blue-dark: #042036;
+$gray: #839496;
+$gray-light: #eeeeee;
+$orange: #E9794B;
+$black: #000000;
+$white: #ffffff;
+$magenta: #D33682;
+$turquoise: #2aa198;
+$blue: #268bd2;
+$gold: #b58900;
+$tangarine: #CB4B16;
+$vacuum:#002a36;
+
+
+// set up color variables
+$color-primary: $orange;
+$color-secondary: $gray;
+$color-highlight: $blue;
+$brex-orange: $orange;
+
+// set up color classes
+.color-primary {
+  color: $blue
+}
+.color-secondary {
+  color: $gray
+}
+.color-highlight {
+  color: $blue
+}
