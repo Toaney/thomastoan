@@ -3,6 +3,7 @@ import TodoList from '../code-snippets/todo-list';
 import TwitterFeedFinder from '../code-snippets/twitterFeedFinder/twitterFeedFinder';
 import NasaEventFinder from '../code-snippets/nasaEventFinder/nasaEventFinder.js';
 import MovieFinder from '../code-snippets/movieFinder/movieFinder.js';
+import CardInput from '../code-snippets/cardInput/cardInput.js';
 
 function Snippets() {
     const [displayLink, setDisplayLink] = React.useState("default");
@@ -22,7 +23,7 @@ function Snippets() {
                         Nasa Events
                     </button>
                     <button class="sidebar-link" onClick={event => setDisplayLink("cc-validator")}>
-                        Credit Card Validator
+                        CC Validator
                     </button> 
                     <button class="sidebar-link" onClick={event => setDisplayLink("twitter-feed-finder")}>
                         Twitter Feed
@@ -39,7 +40,7 @@ function Snippets() {
                     {displayLink === "twitter-feed-finder"? <TwitterFeedFinder /> : ""}
                     {displayLink === "nasa-event-finder"? <NasaEventFinder /> : ""}
                     {displayLink === "movie-finder"? <MovieFinder /> : ""}
-                    {displayLink === "cc-validator"? <CCValidator /> : ""}
+                    {displayLink === "cc-validator"? <CardInput /> : ""}
                 </div>
             </div>
         </React.Fragment>
