@@ -5,14 +5,21 @@ import Search from './search';
 const MovieFinder = () => {
 
     return(
-        <div className="page">
-            <div className="welcome-message">
-                <h2>Welcome to the Movie Finder</h2>
-                <p>Browse popular movies or search for movies by keyword in the searchbar below.</p>
+        <React.Fragment>
+            <div className="row">
+                <div className="profile">
+                    <p>Displayed below is the UI for Movie Finder. A link to the full project can be found in this Git Repository. Refer to the project's README for full installation instructions.</p>
+                </div>
             </div>
-            <Search />
-            <ListMovies />
-        </div>
+            <div className="page">
+                <div className="welcome-message">
+                    <h2>Welcome to the Movie Finder</h2>
+                    <p>Browse popular movies or search for movies by keyword in the searchbar below.</p>
+                </div>
+                <Search />
+                <ListMovies />
+            </div>
+        </React.Fragment>
     )
 }
 

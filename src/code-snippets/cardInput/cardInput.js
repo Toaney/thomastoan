@@ -80,6 +80,11 @@ const CardInput = () => {
 
     return(
         <React.Fragment>
+            <div className="row">
+                <div className="profile">
+                    <p>Enter a CC number below. The input validator will detect credit card type and format the input accordingly. Note that the validator utilizes an API which rate limits API calls.</p>
+                </div>
+            </div>
             <div className="card-component">
                 {/* <p className="card-input-label">Credit Card Number <span className="required">*</span></p> */}
                 <label className="card-input-label" htmlFor="card-input-field">Credit Card Number <span className="required">*</span></label>
