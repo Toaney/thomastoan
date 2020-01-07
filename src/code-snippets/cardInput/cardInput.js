@@ -82,7 +82,7 @@ const CardInput = () => {
         <React.Fragment>
             <div className="row">
                 <div className="profile">
-                    <p>Enter a CC number below. The input validator will detect credit card type and format the input accordingly. Note that the validator utilizes an API which rate limits API calls.</p>
+                    <p>Enter a CC number below. The input validator will detect credit card type and format the input accordingly. Note that the validator utilizes the <a href="https://binlist.net/">binlist.net</a> API.</p>
                 </div>
             </div>
             <div className="card-component">
@@ -112,7 +112,45 @@ const CardInput = () => {
                 </div>
                 {validLength && apiError && <p className="card-input-error" id="api-error" role="alert">Oh no! Something went wrong.</p>}
 
-
+                <div className="test-data-container">
+                Trigger various credit card types using test data below: 
+                    <div className="test-data-row">
+                        <div>
+                            <p className="test-cc">
+                                American Express
+                            </p>
+                            <p className="test-cc">
+                                3714 49635 398431
+                            </p>
+                        </div>
+                        <div>
+                            <p className="test-cc">
+                                Discover
+                            </p>
+                            <p className="test-cc">
+                                6011 0009 9013 9424
+                            </p>
+                        </div>
+                    </div>
+                    <div className="test-data-row">
+                        <div>
+                            <p className="test-cc">
+                                Mastercard
+                            </p>
+                            <p className="test-cc">
+                                5105 1051 0510 5100
+                            </p>
+                        </div>
+                        <div>
+                            <p className="test-cc">
+                                Visa
+                            </p>
+                            <p className="test-cc">
+                                4242 4242 4242 4242
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
             {/* uncomment while debugging - displays component state on page 
             <p>card input: {cardInput}</p>

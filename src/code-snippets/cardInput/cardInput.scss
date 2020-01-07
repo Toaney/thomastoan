@@ -5,6 +5,7 @@
   
   .card-component {
     max-width: 490px;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -22,7 +23,6 @@
   .card-input-label {
     display: block;
     margin-bottom: 10px;
-    color: #4F4F4F;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -89,5 +89,24 @@
   }
   
   .required {
-    color: #F2994A;
+    color: #CB4B16
+  }
+
+  .test-data-container {
+    margin-top: 40px;
+  }
+
+  .test-data-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+
+  .test-data-row div {
+    width: 50%;
+  }
+
+  .test-cc {
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
