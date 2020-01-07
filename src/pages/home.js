@@ -33,7 +33,7 @@ function Home() {
           <div className="info-segment">
             <h2>Oct 2019 - present</h2>
             <h3>Software Engineer/ Photographer/ Developer/ Gardener</h3>
-              <p>JavaScript, HTML, SCSS, React, Redux, JSX, Node.js, Express, MongoDB, JSLint, Enzyme, Jest, Webpack, Jenkins, Mixpanel, Google Domains, Amazon Web Services, Chrome DevTools, WordPress, UI/UX Design, Adobe Photoshop, Adobe Illustrator, Invision, Figma, Jira, Bitbucket, Confluence, Github, moonhangar.com, thomastoan.com</p> 
+              <p>React Hooks, JavaScript, HTML, SCSS, Redux, JSX, Node.js, Express, MongoDB, JSLint, Enzyme, Jest, Webpack, Jenkins, Mixpanel, Google Domains, Amazon Web Services, Chrome DevTools, WordPress, UI/UX Design, Adobe Photoshop, Adobe Illustrator, Invision, Figma, Jira, Bitbucket, Confluence, Github, moonhangar.com, thomastoan.com</p> 
           </div>
         </div>
         <br />
