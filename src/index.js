@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import './scss/styles.scss'
 // import './App.css';
 import App from './App';
@@ -20,10 +20,12 @@ ReactDOM.render(
     <Provider store={store}>
         <Router>
             <App />
-            <Route path="/snippets" component={ Snippets } />
-            <Route path="/home" component={ Home } />
-            <Route path="/todo-list" component={ TodoList } />
-            <Route exact path="/" component={ Home } />
+            <Switch>
+                <Route path="/snippets" component={ Snippets } />
+                <Route path="/home" component={ Home } />
+                <Route path="/todo-list" component={ TodoList } />
+                <Route exact path="/" component={ Home } />
+            </Switch>
         </Router>
     </Provider>, 
     document.getElementById('root'));

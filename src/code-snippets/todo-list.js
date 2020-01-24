@@ -19,11 +19,11 @@ function TodoList() {
     <div className="content container">
         <div className="row">
             <div className="profile">
-                <p>The Todo List below is built with a React Functional Component paired with React Hooks (released v16.8). Look around and add new items to your Todo List, mark items complete, or even delete items entirely.</p>
+                <p>The To-do List below is built with a React Functional Component paired with React Hooks (released v16.8). Look around and add new items to your To-do List, mark items complete, or even delete items entirely.</p>
             </div>
         </div>
         <div className="todo-list-app">
-        <h2 className="tool-heading">Todo List</h2>
+        <h2 className="tool-heading">To-do List</h2>
         <div className="todo-list">
             {/* map items from state array into todo items */}
             {todoList.map((item, index) => (

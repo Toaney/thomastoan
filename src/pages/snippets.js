@@ -4,6 +4,7 @@ import TwitterFeedFinder from '../code-snippets/twitterFeedFinder/twitterFeedFin
 import NasaEventFinder from '../code-snippets/nasaEventFinder/nasaEventFinder.js';
 import MovieFinder from '../code-snippets/movieFinder/movieFinder.js';
 import CardInput from '../code-snippets/cardInput/cardInput.js';
+import HackerNews from '../code-snippets/hackerNews/pages/news';
 
 function Snippets() {
     const [displayLink, setDisplayLink] = React.useState("default");
@@ -17,14 +18,17 @@ function Snippets() {
                 {/* //add sidebar component */}
                 <div className="snippets-sidebar">
                     <button class="sidebar-link" onClick={event => setDisplayLink("todo-list")}>
-                        Todo List
-                    </button>
-                    <button class="sidebar-link" onClick={event => setDisplayLink("nasa-event-finder")}>
-                        Nasa Events
+                        To-do List
                     </button>
                     <button class="sidebar-link" onClick={event => setDisplayLink("cc-validator")}>
                         CC Validator
+                    </button>
+                    <button class="sidebar-link" onClick={event => setDisplayLink("hacker-news-clone")}>
+                        Hacker News
                     </button> 
+                    <button class="sidebar-link" onClick={event => setDisplayLink("nasa-event-finder")}>
+                        Nasa Events
+                    </button>
                     <button class="sidebar-link" onClick={event => setDisplayLink("twitter-feed-finder")}>
                         Twitter Feed
                     </button> 
@@ -41,6 +45,7 @@ function Snippets() {
                     {displayLink === "nasa-event-finder"? <NasaEventFinder /> : ""}
                     {displayLink === "movie-finder"? <MovieFinder /> : ""}
                     {displayLink === "cc-validator"? <CardInput /> : ""}
+                    {displayLink === "hacker-news-clone"? <HackerNews /> : ""}
                 </div>
             </div>
         </React.Fragment>

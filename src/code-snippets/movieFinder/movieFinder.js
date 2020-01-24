@@ -8,7 +8,7 @@ const MovieFinder = () => {
         <React.Fragment>
             <div className="row">
                 <div className="profile">
-                    <p>Displayed below is the UI for Movie Finder. A link to the full project can be found in this Git Repository. Refer to the project's README for full installation instructions.</p>
+                    <p>Displayed below is the UI for Movie Finder. A link to the full project can be found in this <a href="https://github.com/toaney/movie-finder" alt="movie finder repository" target="_blank">Git Repository</a>. Refer to the project's README for full installation instructions.</p>
                 </div>
             </div>
             <div className="page">

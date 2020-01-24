@@ -7,7 +7,7 @@ function Home() {
         <div className="row">
           <div className="profile">
 
-            <p>Front End Developer/Engineer with a degree in Political Economics and a passion for creating. Explore my professional work history and some of the obscure skills I've picked up along the way, or <a href="/thomas-toan-resume.pdf" target="_blank" onclick="gtag('event', 'resume', { 'event_category': 'download', 'event_label': 'hero_copy', 'value': 'no_value' });">download my resume</a>.</p>
+            <p>Front End Developer/Engineer with a passion for creating. Explore my professional work history and some of the obscure skills I've picked up along the way, or <Link to="/snippets">view my code snippets</Link>.</p>
           </div>
         </div>
         <br />
@@ -18,14 +18,6 @@ function Home() {
             <a href="https://www.github.com/toaney" rel="noopener noreferrer" target="_blank" onclick="gtag('event', 'github', { 'event_category': 'outbound_link', 'event_label': 'hero_icon', 'value': 'no_value' });"><i class="icon fa fa-github fa-2x"></i></a><span> </span>
             <a href="https://www.behance.net/toaney" rel="noopener noreferrer" target="_blank" onclick="gtag('event', 'behance', { 'event_category': 'outbound_link', 'event_label': 'hero_icon', 'value': 'no_value' });"><i class="icon fa fa-behance fa-2x"></i></a><span> </span>
             <a href="mailto:toaney@gmail.com" onclick="gtag('event', 'email_toaney', { 'event_category': 'contact', 'event_label': 'hero_icon', 'value': 'no_value' });"><i class="icon fa fa-envelope-o fa-2x"></i></a> 
-          </div>
-        </div>
-        <br />
-        <div className="row">
-          <div className="info-segment">
-            <h2>Code Snippets</h2>
-            <h3>Browse below for code snippets</h3>
-              <p><Link to="/todo-list">React Hooks - Todo List</Link></p> 
           </div>
         </div>
         <br />

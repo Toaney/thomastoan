@@ -8,7 +8,7 @@ const TwitterFeedFinder = () => {
         <React.Fragment>
             <div className="row">
                 <div className="profile">
-                    <p>Displayed below is the UI for the Twitter Feed Finder and requires a server to fully function. This full project can be downloaded from this git repository and run locally. Refer to the README for full installation instructions. Note that this project requires the user to input Twitter Developer credentials to run properly.</p>
+                    <p>Displayed below is the UI for the Twitter Feed Finder and requires a server to fully function. This full project can be downloaded from this <a href="https://github.com/toaney/twitterfeed_finder" alt="twitterfeed finder repo" target="_blank">Git Repository</a> and run locally. Refer to the README for full installation instructions. Note that this project requires the user to input Twitter Developer credentials to run properly.</p>
                 </div>
             </div>
             <div className="page">
