@@ -23,16 +23,16 @@ function Home() {
         <br />
         <div className="row">
           <div className="info-segment">
-            <h2>Oct 2019 - present</h2>
-            <h3>Software Engineer/ Photographer/ Developer/ Gardener</h3>
-              <p>React Hooks, JavaScript, HTML, SCSS, Redux, JSX, Node.js, Express, MongoDB, JSLint, Enzyme, Jest, Webpack, Jenkins, Mixpanel, Google Domains, Amazon Web Services, Chrome DevTools, WordPress, UI/UX Design, Adobe Photoshop, Adobe Illustrator, Invision, Figma, Jira, Bitbucket, Confluence, Github, moonhangar.com, thomastoan.com</p> 
+            <h2>March 2020 - present</h2>
+            <h3>Software Engineer</h3>
+              <p>Elm, Ruby on Rails, React Hooks, Redux, JavaScript, HTML, SCSS, Rspec, Figma</p> 
           </div>
         </div>
         <br />
         <div className="row">
           <div className="info-segment">
             <h2>July 2018 - Sept 2019</h2>
-            <h3>Asurion Software Engineer 2 - Web/ Photographer/ Developer/ Fisherman/ Gardener</h3>
+            <h3>Asurion Software Engineer - Web/ Photographer/ Developer/ Fisherman/ Gardener</h3>
               <p>JavaScript, HTML, SCSS, React, Redux, JSX, Node.js, JSLint, Enzyme, Jest, Webpack, Jenkins, Mixpanel, Google Analytics, Google Domains, Amazon Web Services, Chrome DevTools, Firefox DevTools, WordPress, UI/UX Design, Adobe Photoshop, Adobe Illustrator, Invision, Figma, Jira, Bitbucket, Confluence, Github, moonhangar.com, thomastoan.com, Surf Fishing, Cast Iron Cooking</p> 
           </div>
         </div>
